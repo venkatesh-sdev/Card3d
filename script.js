@@ -5,7 +5,7 @@ if (innerWidth < 700) {
         const x = touchLocation.clientX;
         const y = touchLocation.clientY;
         rotateElement(div, x, y);
-    });
+    });  
 } else {
     document.addEventListener("mousemove", (event) => {
         const div = document.querySelector("div");
