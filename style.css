@@ -1,11 +1,8 @@
-
-
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
 body{
     background: hsl(224, 32%, 12%);
     background-image: conic-gradient(
@@ -20,7 +17,6 @@ body{
     display: grid;
     place-items: center;
 }
-
 div{
     background-color: rgb(24, 24, 24);
     color:white;
@@ -33,11 +29,9 @@ div{
     transform-style: preserve-3d;
     transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
 }
-
 div > h1{
     text-shadow: 0 0 .30rem rgb(255, 255, 255);
 }
-
 div::after{
     content:'';
     position: absolute;
@@ -58,13 +52,11 @@ div::before{
     z-index:-2;
     transform: translateZ(-35px) scale(1.05);
 }
-
 @media screen and (min-width:500px) {
     div{
         padding:4rem;
         font-size:2rem;
     }
-    
     div::after{
 
         transform: translateZ(-20px) scale(1.1);
