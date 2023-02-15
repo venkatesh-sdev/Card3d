@@ -1,5 +1,5 @@
 const answer = window.orientation > 1;
-if (answer) {
+if (!answer) {
     document.addEventListener("touchmove", (event) => {
         const div = document.querySelector("div");
         const touchLocation = event.targetTouches[0];
