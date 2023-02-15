@@ -1,4 +1,4 @@
-if (innerWidth > 700) {
+if (innerWidth < 700) {
     document.addEventListener("touchmove", (event) => {
         const div = document.querySelector("div");
         const touchLocation = event.targetTouches[0];
