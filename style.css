@@ -13,7 +13,7 @@ body{
       blue
     );
     background-blend-mode: multiply;
-    height:100vh;
+    height:90vh;
     display: grid;
     place-items: center;
 }
