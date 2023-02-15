@@ -24,11 +24,11 @@ body{
 div{
     background-color: rgb(24, 24, 24);
     color:white;
-    padding:4rem;
+    padding:1rem;
     border-radius:10px;
     font-family: sans-serif;
     text-transform: uppercase;
-    font-size:3rem;
+    font-size:1rem;
     font-weight: bold;
     transform-style: preserve-3d;
     transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
@@ -46,7 +46,7 @@ div::after{
     inset:0;
     border-radius: inherit;
     z-index:-3;
-    transform: translateZ(-50px) scale(1.1);
+    transform: translateZ(-40px) scale(1.1);
 }
 div::before{
     content:'';
@@ -56,5 +56,20 @@ div::before{
     inset:0;
     border-radius: inherit;
     z-index:-2;
-    transform: translateZ(-50px) scale(1.05);
+    transform: translateZ(-35px) scale(1.05);
+}
+
+@media screen and (min-width:500px) {
+    div{
+        padding:4rem;
+        font-size:2rem;
+    }
+    
+    div::after{
+
+        transform: translateZ(-20px) scale(1.1);
+    }
+    div::before{
+        transform: translateZ(-15px) scale(1.05);
+    }
 }
